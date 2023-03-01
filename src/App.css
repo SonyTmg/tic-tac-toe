@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+.grid-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid-tile {
+  padding: 30px;
+  font-size: 50px;
+}
+
+.grid-border-right {
+  border-right: 1px solid white;
+}
+
+.grid-border-top {
+  border-top: 1px solid white ;
+}
