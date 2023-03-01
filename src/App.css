@@ -42,8 +42,12 @@
 }
 
 .grid-tile {
-  padding: 30px;
+  width: 100px;
+  height: 100px;
   font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .grid-border-right {
