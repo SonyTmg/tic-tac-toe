@@ -4,6 +4,10 @@ function Tile(props) {
 
   const [piece, setPiece] = useState();
   const onClick = () => {
+    // If this is second click, don't run code below
+    if (piece === 'X' || piece === 'O') {
+      return;
+    }
     setPiece(props.nextPiece);
     props.toggleNextPiece();
   }
@@ -11,7 +15,7 @@ function Tile(props) {
   // The first click will always represent X
   // After the first click, every other click should alternate until everything is filled
   return (
-    <div className="grid-tile" onClick={onClick}>
+    <div data-testid={props.testID} className="grid-tile" onClick={onClick}>
       {piece}
     </div>
   )
